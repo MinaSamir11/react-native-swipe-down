@@ -18,32 +18,20 @@ $ npm install react-native-swipe-down
   modalVisible={ShowComment}
   //if you don't pass HeaderContent you should pass marginTop in view of ContentModel to Make modal swipeable
   ContentModal={
-    <View style={{flex: 1, marginTop: 40}}>
+    <View style={styles.containerContent}>
       <FlatList
-        data={Blogs}
+        data={data}
         renderItem={({item, index}) => (
-          <MessageCommentComponent key={index} Data={item} />
+          <item key={index} Data={item} />
         )}
         keyExtractor={item => item.id}
       />
     </View>
   }
-  HeaderStyle={{
-    marginTop: 0,
-  }}
-  ContentModalStyle={{
-    backgroundColor: '#005252',
-    marginTop: 0,
-  }}
+  HeaderStyle={styles.headerContent}
+  ContentModalStyle={styles.Modal}
   HeaderContent={
-    <View
-      style={{
-        flex: 1,
-        alignContent: 'center',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: 40,
-      }}>
+    <View style={styles.containerHeader}>
       <Text>Header Content</Text>
     </View>
   }
@@ -51,6 +39,26 @@ $ npm install react-native-swipe-down
     setShowModelComment(false);
   }}
 />
+
+const styles = StyleSheet.create({
+  containerContent: {flex: 1, marginTop: 40},
+  containerHeader: {
+    flex: 1,
+    alignContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 40,
+  },
+  headerContent:{
+    marginTop: 0,
+  },
+  Modal: {
+    backgroundColor: '#005252',
+    marginTop: 0,
+  }
+});
+
+
 ```
 # props
                     
