@@ -1,0 +1,30 @@
+{
+  "name": "react-native-swipe-down",
+  "version": "1.0.0",
+  "description": "react native swip down it's animation modal to swipe down as facebook comments it support flatlist and scrolview inside it without conficlt with animation down and scrolling down ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinaSamir11/react-native-swipe-down.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "swipe",
+    "down",
+    "flatlist",
+    "animation",
+    "facebook",
+    "comments",
+    "view"
+  ],
+  "author": "Mina Samir Shafik <menasamer11@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinaSamir11/react-native-swipe-down/issues"
+  },
+  "homepage": "https://github.com/MinaSamir11/react-native-swipe-down#readme"
+}
